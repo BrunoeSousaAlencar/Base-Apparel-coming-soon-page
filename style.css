@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root{
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+    --color:hsl(0, 0%, 100%);
+    --color1:hsl(0, 100%, 98%);
+    --color2:hsl(0, 80%, 86%);
+    --color3:hsl(0, 74%, 74%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    background-color: var(--color1);
+    background-image: url(images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+    height: 600px;
+}
+
+main{
+    display: flex; 
+    margin: 60px 0px 0px 140px;
+}
+
+h1{
+    letter-spacing: 7px;
+    margin-top: 120px;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+span{
+    font-weight: 300;
+    color: var(--Desaturated-Red);
+}
+.top{
+    display: block;
+}
+
+.foto-mulher{
+    display: none;
+}
+p{
+    color: var(--Desaturated-Red);
+    width: 400px; 
+}
+
+#email{
+    border: 1px solid var(--color2);
+    border-radius: 40px;
+    padding: 15px;
+    padding-left: 20px;
+    width: 350px;
+    outline: unset;
+}
+
+#emial::placeholder{
+    color: var(--Dark-Grayish-Red);
+}
+
+#email:focus-within{
+    border: 1px solid var(--color2);
+
+}
+
+.botao{
+    background-image: linear-gradient( to left, var(--color3),var(--color2) );
+    position: relative;
+    right: 70px;
+    top: 19px;
+    padding: 14px 40px 14px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background: var(--color3);
+    box-shadow: 0px 0px 9px var(--color3);
+}
+
+@media (max-width: 1200px){
+    main{
+        display: flex;
+        margin: 60px 0px 0px 70px;
+    }
+}
+
+@media (max-width: 1020px){
+
+    main{
+        display: grid; 
+        margin: 60px 0px 0px 0px;
+        place-items: center;
+    }
+
+    body{
+        background-image: none;
+    }
+
+    .foto-mulher{
+        width: 600px;
+        margin: auto 0;
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media (max-width: 650px){
+
+    .foto-mulher{
+        width: 500px;
+    }
+}
+
+@media (max-width: 500px){
+
+    main{
+        display: grid; 
+        margin: 60px 0px 0px 0px;
+        place-items: center;
+    }
+
+
+    .foto-mulher{
+        width: 100vw;
+        display: grid;
+        place-items: center;
+        margin: auto;
+    }
+}
