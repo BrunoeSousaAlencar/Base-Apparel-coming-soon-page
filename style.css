@@ -50,6 +50,7 @@ span{
 .foto-mulher{
     display: none;
 }
+
 p{
     color: var(--Desaturated-Red);
     width: 400px; 
@@ -93,6 +94,10 @@ p{
         display: flex;
         margin: 60px 0px 0px 70px;
     }
+
+    form{
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width: 1020px){
@@ -107,6 +112,14 @@ p{
         background-image: none;
     }
 
+    h1{
+        margin-top: 60px;
+    }
+
+    .logo{
+        margin: 0px 0px 30px 20px;
+    }
+
     .foto-mulher{
         width: 600px;
         margin: auto 0;
@@ -117,24 +130,61 @@ p{
 
 @media (max-width: 650px){
 
-    .foto-mulher{
-        width: 500px;
+    h1{
+        letter-spacing: 7px;
+        font-size: 60px;
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 20px;
     }
+
+    p{
+        width: 80vw;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .foto-mulher{
+        width: 97vw;
+    }
+
+    #email{
+        width: 250px;
+    }
+
+    form{
+        margin: auto;
+        display: grid;
+        place-items: center;
+    }
+
+    .botao{
+        position: relative;
+        top: -47px;
+        left: 120px;
+    }
+
 }
 
 @media (max-width: 500px){
 
     main{
         display: grid; 
-        margin: 60px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
         place-items: center;
     }
 
+    .logo{
+        margin: 40px 0px 30px 20px;
+    }
 
     .foto-mulher{
-        width: 100vw;
+        width: 95.5vw;
         display: grid;
         place-items: center;
-        margin: auto;
+        margin: 0 ;
     }
+
+    
 }
