@@ -9,7 +9,6 @@
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
-    
     <main>
         <div class="texto">
             <div class="top">
@@ -23,9 +22,13 @@
                     Hello fellow shoppers! We're currently building our new fashion store.
                     Add your email below to stay up-to-date with announcements and our launch deals.
                 </p>
-            <form action="paginas/index.html"  method="get">
-                <input type="email" name="email" id="email" placeholder="Email Address" required>
-                <img onclick="click()" class="botao" src="images/icon-arrow.svg" alt="enviar">
+            <form action="paginas/index.html" id="form"  method="get">
+                <input type="email" name="email" id="email" placeholder="Email Address" required value="">
+
+                <input class="submit" type="submit" value="">
+
+                <img class="seta" src="images/icon-arrow.svg" alt="">
+                <div class="erro"></div>
             </form>
         </div>
     </main>
